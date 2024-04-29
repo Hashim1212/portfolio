@@ -120,15 +120,7 @@
     }
   });
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+  
 
   /**
    * Hero type effect
@@ -153,7 +145,7 @@
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
-      offset: '50%',
+      offset: '100%',
       handler: function(direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
